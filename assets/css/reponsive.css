@@ -50,6 +50,88 @@
     .banner{
         margin-top:80px ;
     }
+    .banner-heading {
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 14px;
+    }
+    .banner-title {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 10px 0 20px;
+    }
+    .banner-btn {
+    width: 200px;
+    height: 40px;
+    font-size: 30px;
+    padding: 4px 12px;
+    }
+    .banner-image{
+        display: none;
+
+    }
+    /* content */
+    /* introduce */
+    .introduce-logo__img {
+        width: 90%;
+        margin-left: 7%;
+    }
+    .introduce-tittle {
+        font-size: 14px;
+        width: 70%;
+        margin: auto;
+    }
+    .introduce-img {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .features-img {
+        width: 80%;
+        margin: 0 39px;
+    }
+    /* contact */
+    .contact-support{
+        margin-top: 10px;
+    }
+    .contact-content__title{
+        width: 220px;
+        font-size:16px ;
+        font-weight: 600;
+        
+    }
+    .suport-img{
+        width: 80%;
+    }
+    /* download */
+    .ios-img{
+        width: 80%;
+    }
+    .download__heading {
+        font-size: 30px;
+    }
+    .download-title {
+        text-align: center;
+        margin: 40px auto;
+    }
+    /* contact */
+    .contact__heading {
+        width: 80%;
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    /* footer */
+    .swapnow-logo{
+        display: none;
+    }
+    .footer-heading{
+        font-size:18px ;
+    }
+    .footer-list {
+        font-size: 12px;
+    }
+    .footer-footer {
+        font-size: 10px;
+        height: 30px;
 }
 /* tablet $ mobile */
 @media only screen and (max-width:63.9375em){
@@ -127,6 +209,19 @@
     .nav-tablet__item{
         padding: 20px 10px;
     }
+     
+    /* introduce */
+
+    #introduce{
+        
+        overflow-x:scroll ;
+        -webkit-scrollbar-thumb:none;
+        
+    }
+    
+    /* contact */
+    
+    
 }
 /*  740px < tablet < 1024px*/
 @media only screen and (min-width:46.25em) and (max-width:63.9375em){
@@ -150,13 +245,6 @@
         margin: 0 24%;
     }
     /* introduce */
-
-    #introduce{
-        
-        overflow-x:scroll ;
-        -webkit-scrollbar-thumb:none;
-        
-    }
     .introduce-logo__img{
         width: 610px;
         margin-bottom: 16px;
@@ -182,6 +270,7 @@
     }
     .contact-support{
         margin-top: 10px;
+        
     }
     .contact-content__title{
         width: 220px;
@@ -189,6 +278,8 @@
         font-weight: 600;
         
     }
+
+   
 }
 /* pc >= 1024px */
 @media only screen and (min-width:64em){
