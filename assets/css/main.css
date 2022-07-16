@@ -138,7 +138,7 @@ body {
     margin-top: 121px;
     width: 100%;
     background-color: #EDFDFF;
-    display: none;
+    display: flex;
     justify-content: space-around;
 }
 
