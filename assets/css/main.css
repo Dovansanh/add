@@ -28,11 +28,7 @@ body{
     left: 0;
     right: 0;
 }
-.header-js{
-    border-radius: 50px;
-    transition: all 0.5s;
 
-}
 .header-logo{
     width: 400px;
     margin-right: 60px;
@@ -57,7 +53,8 @@ body{
     display: block;
     font-weight: 600;
 }
-.item-link{
+.item__link{
+    display: block;
     text-decoration: none;
     color: #757575;
 }
@@ -74,11 +71,13 @@ body{
     margin-left: 60px;
     box-shadow:  2px -2px 2px rgba(0,0,0,0.3);
     transition: all 0.5s;
+    position: relative;
 
 }
 
 .search{
-    height: 100%;
+    width: 100%;
+    height: 59px;
     border: none;
     outline: none;
     background-color: transparent;
@@ -86,22 +85,45 @@ body{
     font-style: italic;
     flex: 1;
     font-size: 18px;
+    margin-right: 45px;
 }
 .icon-search{
-    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 59px;
+    height: 59px;
+    
+    display: flex;
     font-size: 25px;
     padding: 5px;
     
 }
+.icon-search i{
+    margin: auto;
+    cursor: pointer;
+    padding:5px;
+    opacity: 0.8;
+
+
+}
+.icon-search i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
 /* end header */
 /* --------------------------------------- */
 /* banner */
+.no-wrap{
+    flex-wrap: nowrap !important;
+}
 .banner{
     margin-top: 121px;
     width: 100%;
-    height: 960px;
     background-color:#EDFDFF;
-    display: flex;
+    display: none;
     justify-content: space-around;
 }
 .banner-logo{
@@ -144,6 +166,9 @@ body{
 .banner-image{
     width: 100%;
     margin: 40px 30px;
+}
+.banner-image img{
+    width: 100%;
 }
 /* content */
 /* features */
@@ -214,6 +239,7 @@ body{
     width: 535px;
 }
 .introduce-img{
+    width: 100%;
     margin-top:40px ;
 }
 /* end introduce */
@@ -271,9 +297,9 @@ body{
     width: 530px;
 }
 .contact-support{
-    width: 540px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .contact-img2{
     width:120px;
@@ -304,7 +330,7 @@ body{
     margin-left: 5%;
 }
 .footer-logo{
-    width: 266px;
+    width: 90%;
     text-align: left;
 }
 .footer-header{
@@ -325,7 +351,7 @@ body{
     border-radius:50px ;
 }
 .footer-border__follow{
-    width: 300px;
+    width: 90%;
 }
 .footer-list{
     list-style: none;
@@ -342,6 +368,9 @@ body{
 }
 .footer-swapnow{
     position: relative;
+}
+.swapnow-img{
+    width: 90%;
 }
 .footer-swapnow__logo{
     position: absolute;

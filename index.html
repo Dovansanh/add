@@ -9,38 +9,73 @@
     <link rel="stylesheet" href="./assets/icon/fonts/font-icon/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/icon/fonts/fontawesome-free-5.15.4-web/fontawesome-free-5.15.4-web/css/all.css">
+    <link rel="stylesheet" href="./assets/css/reponsive.css">
 </head>
 <body>
     <div class="header">
+        <div class="nav-tablet">
+                <i class="nav-tablet__icon ti-menu"></i>
+            <div class="over-menu">
+                <div class="nav-tablet__menu">
+                    <h2 class="nav-tablet__headding">Menu</h2>
+                    <div class="nav-tablet__menu-icon">
+                        <i class="ti-close"></i>
+                    </div>
+                    <ul  class="nav-tablet__list">
+                        <li class="  nav-tablet__item ">
+                            <a href="#" class="item__link active">Home</a>
+                        </li>
+                        <li class="  nav-tablet__item">
+                            <a href="#introduce" class="item__link ">Introduce</a>
+                        </li>
+                        <li class="  nav-tablet__item">
+                            <a href="#download" class="item__link">Download</a>
+                        </li>
+                        <li class="  nav-tablet__item">
+                            <a href="#contact" class="item__link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
         <div class="header-logo">
             <img src="./assets/img/Group 7197.png" alt="" class="logo">
         </div>
         <div class="navbar">
             <ul class="list">
                 <li class="item ">
-                    <a href="#" class="item-link active">Home</a>
+                    <a href="#" class="item__link active">Home</a>
                 </li>
                 <li class="item">
-                    <a href="#introduce" class="item-link ">Introduce</a>
+                    <a href="#introduce" class="item__link ">Introduce</a>
                 </li>
                 <li class="item">
-                    <a href="#download" class="item-link">Download</a>
+                    <a href="#download" class="item__link">Download</a>
                 </li>
                 <li class="item">
-                    <a href="#contact" class="item-link">Contact</a>
+                    <a href="#contact" class="item__link">Contact</a>
                 </li>
             </ul>
         </div>
         <div class="header-search">
             <input type="text" placeholder="search..." class="search">
-            <i class="icon-search ti-search"></i>
+            <div class="icon-search">
+                <i class=" ti-search"></i>
+            </div>
+        </div>
+        <div class="nav-mobi">
+            <i class="nav-mobi-icon ti-search"></i>
+        </div>
+        <div class="nav-mobi__search">
+            <input type="text" placeholder="search..." class="nav-mobi__input">
         </div>
 
     </div>
-    <div class="banner">
+    <div hidden class="banner">
         <div class="grid wide">
-            <div class="row">
-                <div class="col l-6">
+            <div class="row ">
+                <div class="col l-6 m-6">
                     <div class="banner-logo">
                         <div class="logo2">
                             <img src="./assets/img/Group 6968 1.png" alt="">
@@ -52,7 +87,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col l-6">
+                <div class="col l-6 m-6">
                     <div class="banner-image">
                         <img src="./assets/img/1 5.png" alt="">
                     </div>
@@ -61,11 +96,11 @@
         </div>
        
     </div>
-    <div class="content">
+    <div hidden class="content">
         <div id="introduce" class="grid wide">
             <h2 class="features-headding">Features</h2>
-            <div class="row">
-                <div class="col l-4">
+            <div class="row no-wrap">
+                <div class="col l-4 m-12">
                     <img src="./assets/img/Group 7200.png" alt="" class="features-img">
                     <div class="features-border">
                     </div>
@@ -78,7 +113,7 @@
                         
                     </div>
                 </div>
-                <div class="col l-4">
+                <div class="col l-4 m-12">
                     <img src="./assets/img/image 5 (1).png" alt="" class="features-img">
                     <div class="features-border">
                     </div>
@@ -92,7 +127,7 @@
                         
                     </div>
                 </div>
-                <div class="col l-4">
+                <div class="col l-4 m-12">
                     <img src="./assets/img/image 8 (1).png" alt="" class="features-img">
                     <div class="features-border">
                     </div>
@@ -110,30 +145,32 @@
         </div>
         <div class="grid wide">
             <div class="row">
-                <div class="col l-6">
+                <div class="col l-6 m-6">
                     <div class="introduce-logo">
                         <img src="./assets/img/Group 7197.png" alt="" class="introduce-logo__img">
                         <p class="introduce-tittle">We empower people and create economic opportunities, and SWAPNOW solution is a leading application for online exchange.</p>
                     </div>
 
                 </div>
-                <div class="col l-6">
+                <div class="col l-6 m-6">
                     <img src="./assets/img/mockup for web 2.png" alt="" class="introduce-img">
                 </div>
             </div>
         </div>
         <div id="download" class="download">
             <h1 class="download__heading">External Links and Downloads</h1>
-            <div class="download-app">
-                <div class="app ios">
-                    <a href="" class="app-link">
-                        <img src="./assets/img/Group 7222.png" alt="" class="ios-img">
-                    </a>
-                </div>
-                <div class="app androi">
-                    <a href="" class="app-link">
-                        <img src="./assets/img/Group 7223.png" alt="" class="ios-img">
-                    </a>
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-6 m-6 ">
+                        <a href="" class="app-link">
+                            <img src="./assets/img/Group 7222.png" alt="" class="ios-img">
+                        </a>
+                    </div>
+                    <div class="col l-6 m-6 ">
+                        <a href="" class="app-link">
+                            <img src="./assets/img/Group 7223.png" alt="" class="ios-img">
+                        </a>
+                    </div>
                 </div>
             </div>
             <p class="download-title">Tip : connect to your friends AND START YOUR SWAP-PING JOURNEY
@@ -142,7 +179,7 @@
         </div>
         <div id="contact" class="grid">
             <div class="row no-gutters">
-                <div class="col l-6">
+                <div class="col l-6 m-6">
                     <div class="contact">
                         <h1 class="contact__heading">Don't hesitate to contact us</h1>
                         <div class="contact-support">
@@ -167,7 +204,7 @@
                     </div>
 
                 </div>
-                <div class="col l-6">
+                <div class="col l-6 m-6">
                     <img src="./assets/img/Group 7211.png" alt="" class="contact-img">
                 </div>
             </div>
@@ -175,14 +212,14 @@
 
 
     </div>
-    <div class="footer">
+    <div hidden class="footer">
         <div class="footer-wide">
             <div class="grid ">
                 <div class="row no-gutters">
-                    <div class="col l-3">
+                    <div class="col l-3 m-0">
                         <img src="./assets/img/Group 7217.png" alt="" class="footer-logo">
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-4">
                         <div class="footer-header">
                             <h2 class="footer-heading">Link page</h2>
                             <div class="footer-border"></div>
@@ -202,7 +239,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-4">
                         <div class="footer-header">
                             <h2 class="footer-heading">Help & support</h2>
                             <div class="footer-border"></div>
@@ -218,7 +255,7 @@
                                 <a href="" class="footer-item__link"> privacypolicy</a>
                             </li>
                     </div>
-                    <div class="col l-3">
+                    <div class="col l-3 m-4">
                         <h2 class="footer-heading">follow us</h2>
                         <div class="footer-border footer-border__follow"></div>
                         <div class="footer-swapnow">
@@ -253,7 +290,7 @@
     
             </div>
         </div>
-        <div class="footer-footer">Copyright © 2022 by Swapnow. Design by Biti.vn</div>
+        <div hidden class="footer-footer">Copyright © 2022 by Swapnow. Design by Biti.vn</div>
     </div>
    
    
