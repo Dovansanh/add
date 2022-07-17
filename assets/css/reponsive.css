@@ -211,14 +211,10 @@
     }
      
     /* introduce */
-
-    #introduce{
-        
+     #introduce{
         overflow-x:scroll ;
         -webkit-scrollbar-thumb:none;
-        
     }
-    
     /* contact */
     
     
@@ -245,6 +241,7 @@
         margin: 0 24%;
     }
     /* introduce */
+    
     .introduce-logo__img{
         width: 610px;
         margin-bottom: 16px;
@@ -280,9 +277,9 @@
     }
 
    
-}
+}}
 /* pc >= 1024px */
-@media only screen and (min-width:64em){
+@media only screen and (min-width:6.4em){
     .nav-tablet{
         display: none;
     }
