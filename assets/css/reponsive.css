@@ -95,6 +95,9 @@
 /* mobile < 740px */
 @media only screen and (max-width:46.1875em){
     /* header mobi */
+    .nav-tablet{
+        font-size: 20px;
+    }
     .nav-mobi{
         display: block ;
     }
@@ -106,6 +109,9 @@
     }
     .header-logo{
        width: 230px;
+    }
+    .nav-tablet__headding{
+        font-size: 35px;
     }
     /* banner */
     .banner{
